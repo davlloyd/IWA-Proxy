@@ -53,9 +53,15 @@ Variable | Required | Default | Example | Description
 
 ### Example docker command line
 docker run -t -p 3128:3128 /
+
                 -e useraccount='user' /
+
                 -e userdomain='user.dom' /
-                -e userpassword='pass' 
+
+                -e userpassword='pass' /
+
                 -e proxyaddress='192.168.0.10:8080' /
+
                 -n myproxy iwaproxy
+                
 
