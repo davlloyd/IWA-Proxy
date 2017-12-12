@@ -55,10 +55,10 @@ Variable | Required | Default | Example | Description
 
 
 docker run -t -p 3128:3128 /<br>
-                -e useraccount='user' /<br>
-                -e userdomain='user.dom' /<br>
-                -e userpassword='pass' /<br>
-                -e proxyaddress='192.168.0.10:8080' /<br>
-                -n myproxy iwaproxy
+&#9;                -e useraccount='user' /<br>
+&#9;                -e userdomain='user.dom' /<br>
+&#9;                -e userpassword='pass' /<br>
+&#9;                -e proxyaddress='192.168.0.10:8080' /<br>
+&#9;                -n myproxy iwaproxy
 
 
