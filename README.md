@@ -1,6 +1,7 @@
 # IWA-Proxy
 **Integrated Windows Authentication Proxy Gateway Docker Container**
 Author: David Lloyd
+Docker Image: davlloyd/iwaproxy
 Version History:
 
 Version | Date | Comment
@@ -27,7 +28,7 @@ configuration file creation but not active.
 
 ##Instructions
 
-The docker container needs to be run with the following considerations:
+The docker container davlloyd/iwaproxy needs to be run with the following considerations:
 1. Credentials are passed with environment variables (i.e. use the -e argument within docker run)
 2. The gateway proxy is passed as a variable and needs to include address and port
 3. The port mapping also needs to be exposed so that the container can be accessed externally. This is defaulted to 3128 but can be changed with the environment variable *listenaddress*
