@@ -8,7 +8,7 @@ Version | Date | Comment
 --- | --- | ---
 1.00 | 12/12/2017 | Inital Release
 
-**Description**
+## Description
 This docker image uses the CNTML (http://cntlm.sourceforge.net/) application to 
 provide an Integrated Windows Authentication web proxy for those services 
 that do not support it natively. Examples can include call home faclities without
@@ -26,7 +26,7 @@ configuration file creation but not active.
 1. Currently credentials are passed as environment variables which is not ideal. Can look to leverage Docker Secrets in the future although this then relies on Swarm. Alternatively look at some intermediate hashing process to further secure the credentials
 2. include examples for deploying a stack/pod into high level schedulers
 
-#Instructions
+# Instructions
 
 The docker container davlloyd/iwaproxy needs to be run with the following considerations:
 1. Credentials are passed with environment variables (i.e. use the -e argument within docker run)
@@ -37,7 +37,7 @@ The docker container davlloyd/iwaproxy needs to be run with the following consid
 Once done just point the source device to the docker host and container runtime port to have traffic redirected to 
 proxy with appended Windows credentials
 
-**Environment Variables Required**
+## Environment Variables Required
 
 Variable | Required | Default | Example | Description
 --- | --- | --- | --- | ---
