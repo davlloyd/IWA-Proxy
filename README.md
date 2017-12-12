@@ -1,7 +1,10 @@
 # IWA-Proxy
 **Integrated Windows Authentication Proxy Gateway Docker Container**
+
 Author: David Lloyd
+
 Docker Image: davlloyd/iwaproxy
+
 Version History:
 
 Version | Date | Comment
@@ -48,7 +51,7 @@ Variable | Required | Default | Example | Description
 *listenaddress* | no | 0.0.0.0:3128 | | Address which cntlm service listens on
 
 
-**Example docker command line**
+### Example docker command line
 docker run -t -p 3128:3128 /
                 -e useraccount='user' /
                 -e userdomain='user.dom' /
